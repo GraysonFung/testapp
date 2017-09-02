@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!--  ie8以下高速渲染模式模拟火狐谷歌浏览器  -->
+  <meta name="renderer" content="Weibkit"><!-- 高速模式 -->
+  <meta name="author" content="grayson">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+	<title>二三里专题</title>
+	<style>
+		/*css reset*/
+		*{margin:0;padding:0;font-family: "微软雅黑";font-size:14px;}
+		ul,li{list-style: none;}
+		a{text-decoration: none;color:#000;}
+		img{border:none;vertical-align: top;}
+
+		/*css styles*/
+		.top-fixed{
+			position:fixed;
+			top:0;
+			left:0;
+			overflow:hidden;
+			width:96%;
+			padding:0 2%;
+			height:40px;
+			line-height:40px;
+			text-align: center;
+			background:#fff;
+			z-index: 20;
+		}
+		.top-fixed .left{
+			position:absolute;
+			left:4%;
+			top:8px;
+		}
+		.top-fixed .left img{
+			width:12px;
+			height:auto;
+		}
+		.top-fixed .right{
+			position:absolute;
+			right:4%;
+			top:8px;
+		}
+		.top-fixed .right img{
+			width:24px;
+			height:auto;
+		}
+		.top-fixed  h3{
+			display:inline;
+			font-weight:normal;
+			color:#111;
+			font-size:18px;
+		}
+
+		.banner{
+			margin-top:40px;
+			width:100%;
+		}
+		.banner img{
+			width:100%;
+			height:auto;
+		}
+		.news{
+			margin-top:12px;
+		}
+		.news p{
+			padding:0 4%;
+			text-indent:2em;
+			color:#4d4d4d;
+			font-size:14px;
+			line-height:22px;
+		}
+		.news .tag{
+			margin-top:12px;
+			padding:0 4%;
+		}
+		.news .tag a{
+			margin-top:12px;
+			padding:4px 10px;
+			border:1px solid #dddddd;
+			border-radius: 12px;
+			display:inline-block;
+		}
+		.news .tag a:hover{
+			background:gray;
+			color:#fff;
+		}
+		.cut-line{
+			margin-top:12px;
+			width:92%;
+			padding:0 4%;
+			height:30px;
+			line-height:30px;
+			background:#f2f2f2;
+		}
+		.cut-line span{
+			color:red;
+		}
+		.news-list{
+			width:92%;
+			padding: 0 4%;
+		}
+		.news-list ul li{
+			position:relative;
+			padding:3% 0;
+			height:100px;
+			border-bottom: 1px solid #f6f6f6;
+		}
+		.news-list ul li p{
+			font-size: 16px;
+		}
+
+		.news-list .news1{
+			position:absolute;
+			left:0;
+			width:60%;
+			height:92%;
+		}
+		.new1-tips{
+			position:absolute;
+			bottom:12%;
+			color:#b3b3b3;
+		}
+		.news-list .news2{
+			position:absolute;
+			right:0;
+			width:34%;
+		}
+		.news-list .news2 img{
+			width:100%;
+			height:100%;
+		}
+		.buttom-fixed{
+			position:fixed;
+			bottom:0;
+			left:0;
+			overflow:hidden;
+			width:92%;
+			padding:0 4%;
+			height:40px;
+			line-height:40px;
+			text-align: center;
+			background:#fff;
+			z-index: 20;
+		}
+		.buttom-fixed ul{
+			padding-top:10px;
+		}
+		.buttom-fixed ul li{
+			float:left;
+			width:20%;
+		}
+		.buttom-fixed ul li img{
+			float:right;
+			width:24px;
+		}
+		.buttom-fixed .back img{
+			float:left;
+			width:12px;
+		}
+	</style>
+</head>
+<body>
+	<header class="top-fixed">
+		<div class="left"><a href="#"><img src="images/back@2x.png" alt=""></a></div>
+		<h3 class="conter">专题</h3>
+		<div class="right"><a href="#"><img src="images/more@2x.png" alt=""></a></div>
+	</header>
+	<div class="banner">
+		<a href="#"><img src="images/header@2x.png" alt=""></a>
+	</div>
+	<article class="news">
+		<p>中国房地产报社以行业市场化25年的契机，将在北京主办“将中国房地产业改革进行到底及特色小镇难点剖析论坛会议”活动。</p>
+		<p>本次活动旨在见证中国房地产业25年发展光荣与梦想，并推选出具有品牌影响力、科技创新力的房地产企业，为建设中国好房子配套的环保、科技、健康的建材部品，让社会各界公认他们的社会价值，中国房地产行业“将改革进行到底”。</p>
+		<div class="tag">
+			<a href="#">本地楼市</a>
+			<a href="#">本地楼市</a>
+			<a href="#">本地楼市</a>
+			<a href="#">本地楼市</a>
+			<a href="#">本地楼市</a>
+		</div>
+	</article>
+	<div class="cut-line">
+		<span>1</span>/4本地楼市
+	</div>
+	<article class="news-list">
+		<ul>
+			<li>
+				<div class="news1">
+					<p>第一次装修吃了亏，第二次装修怎样选对？</p>
+					<div class="new1-tips">
+						<span>二三里</span>
+						<span>57阅读</span>
+						<span>15分钟前</span>
+					</div>
+				</div>
+				<div class="news2">
+				<a href="#"><img src="images/pic@2x.png" alt=""></a>
+				</div>
+			</li>
+			<li>
+				<div class="news1">
+					<p>第一次装修吃了亏，第二次装修怎样选对？</p>
+					<div class="new1-tips">
+						<span>二三里</span>
+						<span>57阅读</span>
+						<span>15分钟前</span>
+					</div>
+				</div>
+				<div class="news2">
+				<a href="#"><img src="images/pic@2x.png" alt=""></a>
+				</div>
+			</li>
+			<li>
+				<div class="news1">
+					<p>第一次装修吃了亏，第二次装修怎样选对？</p>
+					<div class="new1-tips">
+						<span>二三里</span>
+						<span>57阅读</span>
+						<span>15分钟前</span>
+					</div>
+				</div>
+				<div class="news2">
+				<a href="#"><img src="images/pic@2x.png" alt=""></a>
+				</div>
+			</li>
+			<li>
+				<div class="news1">
+					<p>第一次装修吃了亏，第二次装修怎样选对？</p>
+					<div class="new1-tips">
+						<span>二三里</span>
+						<span>57阅读</span>
+						<span>15分钟前</span>
+					</div>
+				</div>
+				<div class="news2">
+				<a href="#"><img src="images/pic@2x.png" alt=""></a>
+				</div>
+			</li>
+
+		</ul>
+	</article>
+	<footer class="buttom-fixed">
+		<ul>
+			<li class="back"><a href="#"><img src="images/back@2x.png" alt=""></a></li>
+			<li><a href="#"><img src="images/collection@2x.png" alt=""></a></li>
+			<li><a href="#"><img src="images/assist@2x.png" alt=""></a></li>
+			<li><a href="#"><img src="images/share@2x.png" alt=""></a></li>
+			<li><a href="#"><img src="images/comment@2x.png" alt=""></a></li>
+		</ul>
+	</footer>
+</body>
+</html>
